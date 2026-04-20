@@ -1,0 +1,40 @@
+title: Red Tide Data Reanalysis
+author: John Holik
+logo: ""  # optional: path to a logo image, leave empty for now
+copyright: "2026"
+
+# Don't re-execute notebooks on build — use the saved outputs
+execute:
+  execute_notebooks: off
+
+# Allow notebooks to contain errors without failing the build (safety net;
+# shouldn't be needed since your notebooks ran cleanly, but harmless)
+# Omit this block entirely if you want the build to fail on any error.
+
+# HTML output options
+html:
+  favicon: ""
+  use_issues_button: false
+  use_repository_button: true
+  use_edit_page_button: false
+  home_page_in_navbar: true
+  baseurl: ""  # fill in once you know the GitHub Pages URL
+
+# Link the book to your GitHub repo (powers the "open on GitHub" button)
+repository:
+  url: https://github.com/John-Holik/redtide-reanalysis-book
+  branch: main
+
+# Parsing — enables dollar-sign math, colon-fence admonitions, etc.
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - dollarmath
+    - colon_fence
+    - deflist
+
+
+# LaTeX config — only matters if you build a PDF version. Safe to leave.
+latex:
+  latex_documents:
+    targetname: book.tex

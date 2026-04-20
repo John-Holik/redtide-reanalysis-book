@@ -1,0 +1,25 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Discharge (Flow) — Create and Test Reanalysis Data on Discharge_Cms
+    chapters:
+      - file: discharge/00_serialize_model
+      - file: discharge/01_bootstrap_ci
+      - file: discharge/02_glue_ci
+      - file: discharge/03_enkf_ci
+      - file: discharge/04_lpu_ci
+      - file: discharge/05_comparison
+      - file: discharge/06_ensemble_member_inference
+  - caption: Total Nitrogen (TN) — Create and Test Reanalysis Data on Total_Nitrogen
+    chapters:
+      - file: total_nitrogen/merge_stations
+      - file: total_nitrogen/00_serialize_model
+      - file: total_nitrogen/01_bootstrap_ci
+      - file: total_nitrogen/02_glue_ci
+      - file: total_nitrogen/03_enkf_ci
+      - file: total_nitrogen/04_lpu_ci
+      - file: total_nitrogen/05_comparison
+      - file: total_nitrogen/06_ensemble_member_inference
+  - caption: Combined ML — Sample both discharge and nitrogen from ensembles
+    chapters:
+      - file: machine_learning/joint_ensemble_inference

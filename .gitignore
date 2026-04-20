@@ -1,0 +1,26 @@
+# Jupyter Book build output — never commit this
+_build/
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Environments — in case you make one locally for building
+venv/
+.venv/
+env/
