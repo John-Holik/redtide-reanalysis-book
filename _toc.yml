@@ -23,3 +23,6 @@ parts:
   - caption: Combined ML — Sample both discharge and nitrogen from ensembles
     chapters:
       - file: machine_learning/joint_ensemble_inference
+  - caption: Final Report
+    chapters:
+      - file: final_report
