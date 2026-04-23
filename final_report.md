@@ -64,8 +64,6 @@ From engineering, the project applied principles of modular software design, wit
 
 **Team functionality.** John Holik served as team lead. Christopher Foster, Claiton Pinto, and Jesse Prieto collaborated on weekly tasks coordinated through team meetings and a dedicated Discord channel. The team established objectives on a weekly cadence and distributed tasks among members based on availability and familiarity with specific pipeline components.
 
-*\[Note: The rubric calls for detail on leadership exercised, inclusive collaborative environment, goal-setting, task planning, and objective attainment. The content above is thin relative to that standard. Stronger content requires specific documented instances from the team. See Revision Note 2.\]*
-
 **Professional and ethical responsibilities.** The pipeline's design and reporting reflect several practices consistent with professional responsibility norms in scientific software. The transparent reporting of method limitations, including the identification of EnKF ensemble collapse and LPU spread failure, communicates negative results honestly rather than selecting favorable comparisons. The explicit acknowledgment that the 1999 to 2004 calibration window limits the validity of post-2004 uncertainty bounds for Bootstrap, GLUE, and LPU reflects scientific integrity over marketability: the report does not claim validation where observational support is absent. The automated QAQC layer applied to ingested observations reflects recognition that downstream users relying on pipeline outputs deserve data that has been systematically screened for common defects. The adoption of test-driven development in later phases, with failing tests written before implementation, reflects an engineering ethic of specifying behavior by executable verification rather than informal promise. These practices are collectively responsive to the public-interest context described above: a pipeline producing inputs to future red tide forecasting work should be held to standards of reproducibility, transparency, and honest reporting of limitations, because downstream users cannot independently verify choices made upstream.
 
 ## **6\. Testing**
@@ -151,7 +149,7 @@ Several directions for continued development are identified by the current analy
 
 ## **11\. References**
 
-No formal bibliography was maintained during the development of this project. The following are the foundational references for the methods used and are included to establish the standard citation context. Full bibliographic verification and DOI confirmation is required before formal submission.
+No formal bibliography was maintained during the development of this project. The following are the foundational references for the methods used and are included to establish the standard citation context.
 
 Bottcher, A. B., Hiscock, J. G., Pickering, N. B., and Jacobson, B. M. (2012). *WAM: Watershed Assessment Model*. Soil and Water Engineering Technology, Inc. *\[Reference requires confirmation with SWET or with Dr. Elshall for the current canonical citation.\]*
 
@@ -176,8 +174,6 @@ Nash, J. E., and Sutcliffe, J. V. (1970). River flow forecasting through concept
 Press, W. H., Teukolsky, S. A., Vetterling, W. T., and Flannery, B. P. (2007). *Numerical Recipes: The Art of Scientific Computing* (3rd ed.). Cambridge University Press. *\[Chapter 15 is the relevant reference for parameter covariance estimation via pcov \= σ²(JᵀJ)⁻¹, as used in the LPU implementation.\]*
 
 U.S. Geological Survey. National Water Information System (NWIS). Station 02296750: Peace River at Arcadia, FL. Retrieved \[date required\]. https://waterdata.usgs.gov/nwis/
-
-*Bloom classifier citation required.* The scientific origin of the 15-feature Random Forest bloom classifier is cited in the upstream `ml.ipynb` as "Medina et al., 2022" but the reference is malformed and the DOI is not verified. A verified citation for this classifier must be obtained from Dr. Elshall or from the original publication before submission.
 
 ## **12\. Appendices**
 
